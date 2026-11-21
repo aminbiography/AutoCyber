@@ -23,3 +23,4 @@ b5845dd | Mohammad Aminul Islam | 120117040+aminbiography@users.noreply.github.c
 ba8b88f | Mohammad Aminul Islam | 120117040+aminbiography@users.noreply.github.com
 daa1c7e | Mohammad Aminul Islam | 120117040+aminbiography@users.noreply.github.com
 2ad85d7 | idolwave | idolwaveglobal@gmail.com
+2ad85d7 | idolwave | biographyamin@gmail.com
