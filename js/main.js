@@ -3,7 +3,7 @@
    AUTOCYBER — MAIN JAVASCRIPT
    Version: Initial Prototype
    ========================================= */
-
+  
 document.addEventListener("DOMContentLoaded", () => {
 
   if (window.lucide) window.lucide.createIcons();
@@ -180,3 +180,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
