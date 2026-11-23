@@ -20,29 +20,43 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-
+  <!-- MOBILE TOP BAR -->
+  <div class="mobile-topbar">
     <a class="brand" href="#home">
       <span class="brand-icon">⬡</span>Auto<span>Cyber</span>
     </a>
-
-    <button class="menu" aria-label="Toggle navigation" aria-expanded="false">
-      ☰
+    <button class="menu" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
+      <i data-lucide="menu" aria-hidden="true"></i>
     </button>
+  </div>
 
-    <nav class="nav">
-      <a class="active" href="#home">Home</a>
-      <a href="#analyzer-form">Website Analyzer</a>
-      <a href="#solutions">Digital Marketing</a>
-      <a href="#solutions">Cloud Monitoring</a>
-      <a href="#solutions">Cybersecurity</a>
-      <a href="#about">About</a>
+  <!-- DESKTOP SIDEBAR / MOBILE SLIDE-OUT NAVIGATION -->
+  <header class="header" id="site-sidebar">
+    <div class="sidebar-brand-row">
+      <a class="brand" href="#home" aria-label="AutoCyber home">
+        <span class="brand-icon">⬡</span><span class="brand-name">Auto<span>Cyber</span></span>
+      </a>
+      <button class="sidebar-collapse" type="button" aria-label="Collapse sidebar" aria-expanded="true" title="Collapse sidebar">
+        <i data-lucide="panel-left-close" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <p class="nav-caption">MAIN MENU</p>
+    <nav class="nav" id="primary-navigation" aria-label="Primary navigation">
+      <a class="active" href="#home"><i data-lucide="house" aria-hidden="true"></i><span>Home</span></a>
+      <a href="#analyzer-form"><i data-lucide="globe" aria-hidden="true"></i><span>Web Analyzer</span></a>
+      <a href="#solutions"><i data-lucide="chart-no-axes-combined" aria-hidden="true"></i><span>Marketing Analyzer</span></a>
+      <a href="#solutions"><i data-lucide="shield-check" aria-hidden="true"></i><span>Cybersecurity</span></a>
+      <a href="#solutions"><i data-lucide="cloud" aria-hidden="true"></i><span>Cloud Monitoring</span></a>
+      <a href="#about"><i data-lucide="info" aria-hidden="true"></i><span>About</span></a>
     </nav>
 
-    <a class="top-cta" href="#analyzer-form">Get started ↗</a>
-
+    <div class="sidebar-bottom">
+      <a class="top-cta" href="#analyzer-form">Get started <span aria-hidden="true">↗</span></a>
+      <span class="sidebar-note">Intelligent. Secure. Optimized.</span>
+    </div>
   </header>
+  <button class="nav-overlay" type="button" aria-label="Close navigation"></button>
 
   <main id="home">
 
