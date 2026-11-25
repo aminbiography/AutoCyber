@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AutoCyber Web — web, cloud, security and marketing intelligence for digital operations.">
+  <meta name="theme-color" content="#100d20">
+  <title>Web | AutoCyber — Intelligent. Secure. Optimized.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+<div class="mobile-topbar">
+<a class="brand" href="index.html">
+<span class="brand-icon">⬡</span>Auto<span>Cyber</span>
+</a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="menu" type="button">
+<i aria-hidden="true" data-lucide="menu"></i>
+</button>
+</div>
+<header class="header" id="site-sidebar">
+<div class="sidebar-brand-row">
+<a aria-label="AutoCyber home" class="brand" href="index.html">
+<span class="brand-icon">⬡</span><span class="brand-name">Auto<span>Cyber</span></span>
+</a>
+<button aria-expanded="true" aria-label="Collapse sidebar" class="sidebar-collapse" title="Collapse sidebar" type="button">
+<i aria-hidden="true" data-lucide="panel-left-close"></i>
+</button>
+</div>
+<p class="nav-caption">MAIN MENU</p>
+<nav aria-label="Primary navigation" class="nav" id="primary-navigation"><a class="" href="index.html"><i aria-hidden="true" data-lucide="house"></i><span>Home</span></a>
+<a class="active" href="web.html"><i aria-hidden="true" data-lucide="globe"></i><span>Web</span></a>
+<a class="" href="cloud.html"><i aria-hidden="true" data-lucide="cloud"></i><span>Cloud</span></a>
+<a class="" href="security.html"><i aria-hidden="true" data-lucide="shield-check"></i><span>Security</span></a>
+<a class="" href="marketing.html"><i aria-hidden="true" data-lucide="chart-no-axes-combined"></i><span>Marketing</span></a>
+<a class="" href="about.html"><i aria-hidden="true" data-lucide="info"></i><span>About</span></a></nav>
+<div class="sidebar-bottom">
+<a class="top-cta" href="web.html#analyzer-form">Get started <span aria-hidden="true">↗</span></a>
+<span class="sidebar-note">Intelligent. Secure. Optimized.</span>
+</div>
+</header>
+<button aria-label="Close navigation" class="nav-overlay" type="button"></button>
+<main id="web">
+<section class="section wrap service-section" id="web">
+<div class="section-head">
+<div class="eyebrow">WEB INTELLIGENCE</div>
+<h2>Web</h2>
+<p>Analyze, understand and improve your website with practical tools and actionable insights.</p>
+</div>
+<div class="cards">
+<article class="card featured">
+<div class="card-icon">⌕</div><small>AVAILABLE AS A PROTOTYPE</small>
+<h3>Web Analyzer</h3>
+<p>Prepare a website assessment covering performance, SEO signals, availability and foundational security.</p>
+<a href="web.html#analyzer-form">Open Web Analyzer ↗</a>
+</article>
+<article class="card">
+<div class="card-icon cyan">◎</div><small>PLANNED</small>
+<h3>Website Solutions</h3>
+<p>Practical guidance for website structure, usability, technical quality and ongoing improvements.</p>
+<span class="service-status">Coming soon</span>
+</article>
+<article class="card">
+<div class="card-icon blue">⌕</div><small>PLANNED</small>
+<h3>SEO Analyzer</h3>
+<p>Review page titles, descriptions, headings, indexing signals, sitemap and robots directives.</p>
+<span class="service-status">Coming soon</span>
+</article>
+<article class="card">
+<div class="card-icon pink">⚡</div><small>PLANNED</small>
+<h3>Performance Optimization</h3>
+<p>Identify loading and performance opportunities and prioritize improvements.</p>
+<span class="service-status">Coming soon</span>
+</article>
+</div>
+</section>
+<section class="analyzer wrap" id="analyzer-form">
+<div>
+<div class="eyebrow">YOUR FIRST STEP</div>
+<h2>
+          Start with a clearer
+          <br/>
+<span>view of your website.</span>
+</h2>
+<p>
+          Web Analyzer is the first tool planned for this platform.
+          Enter a website address to validate it and preview the analysis workflow.
+        </p>
+</div>
+<form id="analyzerForm">
+<label for="websiteUrl">Your website URL</label>
+<div class="url-field">
+<span>◎</span>
+<input autocomplete="url" id="websiteUrl" placeholder="https://example.com" required="" type="text"/>
+<button aria-label="Analyze website" type="submit">
+            →
+          </button>
+</div>
+<p id="formNote">
+          Preview only. Live website scanning is not connected yet.
+        </p>
+</form>
+<!-- WEBSITE ANALYSIS RESULTS -->
+<div class="analysis-results" hidden="" id="analysisResults">
+<div class="results-header">
+<div>
+<div class="eyebrow">WEBSITE INTELLIGENCE REPORT</div>
+<h2>
+              Analysis <span>overview.</span>
+</h2>
+<p id="analyzedWebsite">
+              Preparing your website analysis...
+            </p>
+</div>
+<div class="results-status" id="analysisStatus">
+            Ready
+          </div>
+</div>
+<!-- RESULT CARDS -->
+<div class="results-grid">
+<article class="result-card">
+<span class="result-icon">◈</span>
+<h3>SEO Analysis</h3>
+<strong id="seoScore">—</strong>
+<p id="seoSummary">
+              Search engine optimization signals
+            </p>
+</article>
+<article class="result-card">
+<span class="result-icon">⚡</span>
+<h3>Performance</h3>
+<strong id="performanceScore">—</strong>
+<p id="performanceSummary">
+              Website performance indicators
+            </p>
+</article>
+<article class="result-card">
+<span class="result-icon">⬡</span>
+<h3>Security</h3>
+<strong id="securityScore">—</strong>
+<p id="securitySummary">
+              Basic website security signals
+            </p>
+</article>
+<article class="result-card">
+<span class="result-icon">◎</span>
+<h3>Availability</h3>
+<strong id="availabilityStatus">—</strong>
+<p id="availabilitySummary">
+              Website availability information
+            </p>
+</article>
+</div>
+<!-- ANALYSIS FINDINGS -->
+<div class="findings-panel">
+<h3>Analysis findings</h3>
+<div id="analysisFindings">
+            Your website findings will appear here.
+          </div>
+</div>
+<!-- PDF REPORT -->
+<div class="report-actions">
+<button disabled="" id="downloadReport" type="button">
+            Download PDF Report ↓
+          </button>
+</div>
+<p class="results-disclaimer">
+          Preliminary website analysis. Results depend on available
+          data and do not constitute a comprehensive security audit.
+        </p>
+</div>
+</section>
+</main>
+<footer class="footer wrap">
+<a class="brand" href="index.html">
+<span class="brand-icon">⬡</span>Auto<span>Cyber</span>
+</a>
+<span>
+      © <b id="year"></b> AutoCyber. Built for a smarter digital future.
+    </span>
+<a href="index.html">Back to top ↑</a>
+</footer>
+</body>
+</html>

@@ -1521,3 +1521,23 @@ body.sidebar-collapsed .nav a { justify-content: center; padding-inline: 0; }
   .nav-overlay,
   .nav a { transition: none; }
 }
+
+/* =========================================
+   AUTOCYBER SERVICE CATEGORY SECTIONS
+========================================= */
+.service-section { scroll-margin-top: 28px; }
+.service-section + .service-section { padding-top: 55px; }
+.service-status {
+  display: inline-flex; align-items: center; margin-top: 4px;
+  padding: 6px 9px; border: 1px solid rgba(189,156,255,.25);
+  border-radius: 20px; color: #c5aaff; background: rgba(189,156,255,.08);
+  font-size: 9px; font-weight: 700; letter-spacing: .3px;
+}
+.service-section .card { min-height: 270px; }
+@media (max-width: 900px) {
+  .service-section .cards { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 560px) {
+  .service-section .cards { grid-template-columns: 1fr; }
+  .service-section .card { min-height: auto; }
+}
